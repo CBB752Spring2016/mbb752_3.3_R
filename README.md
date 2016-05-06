@@ -1,8 +1,8 @@
-# Project GEED
+# Project GEED.r
 
 Author: Calvin Rhodes
 
-The tool that calculates the level of gene expression given pre-defined data sets is called GEED.r. GEED stands for **G**ene **E**xpression **E**nrichment calculator given pre-defined **D**ata sets.
+The tool that calculates the level of gene expression given pre-defined data sets is called GEED. GEED stands for **G**ene **E**xpression **E**nrichment calculator given pre-defined **D**ata sets.
 
 ## General
 GEED.r will take gene expression data, class label data, and a pre-defined geneset to calculate a gene set enrichment analysis value.
