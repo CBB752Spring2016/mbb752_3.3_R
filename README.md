@@ -11,9 +11,9 @@ GEED.r requires 3 inputs: a gct file (gene expression data), a cls file (class l
 
 ## Input Options for GEED:
 
-*gctfile - the name of the gene expression data file (Ex: "all_aml_train.gct")
-*clsfile - the name of the class label data file (Ex: "all_aml_train.cls")
-*geneset - the name of the text file with a list of genes in our pre-defined geneset (Ex: "geneset.txt")
+* gctfile - the name of the gene expression data file (Ex: "all_aml_train.gct")
+* clsfile - the name of the class label data file (Ex: "all_aml_train.cls")
+* geneset - the name of the text file with a list of genes in our pre-defined geneset (Ex: "geneset.txt")
 
 ```{r}
 GEED("all_aml_train.gct", "all_aml_train.cls", "geneset.txt")
