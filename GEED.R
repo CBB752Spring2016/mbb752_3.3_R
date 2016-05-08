@@ -7,11 +7,11 @@ GEED <- function (gctfile, clsfile, geneset) {
   
   CLS <- read.table(clsfile, skip = 2)
   
-  ALL <- GCT[,CLS==0] #use CLS vector to assign to ALL
-  AML <- GCT[,CLS==1] #use CLS vector to assign to AML
+  C1 <- GCT[,CLS==0] #use CLS vector to assign to Class 1
+  C2 <- GCT[,CLS==1] #use CLS vector to assign to Class 2
   pVals <- data.frame()
   for (i in (1:dim(GCT)[1])) {
-    t <- t.test(ALL[i,],AML[i,])
+    t <- t.test(C1[i,],C2[i,])
     pVals <- rbind(pVals,t$p.value)
   }
   pVals$Name <- Names
@@ -44,4 +44,4 @@ GEED <- function (gctfile, clsfile, geneset) {
   return(ES)
 }
   
-value <- GEED("all_aml_train.gct", "all_aml_train.cls", "geneset.txt")
+GEED("all_aml_train.gct", "all_aml_train.cls", "geneset.txt")
