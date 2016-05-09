@@ -1,6 +1,6 @@
 GEED <- function (gctfile, clsfile, geneset) {
   
-  GCT <- read.table(gctfile, sep = "\t", stringsAsFactors = FALSE, skip = 2, header = TRUE)
+  GCT <- read.csv(gctfile, sep = "\t", stringsAsFactors = FALSE, skip = 2, header = TRUE)
   GCT <- GCT[-dim(GCT)[1],] #last row is NAs --> gets rid of that row
   Names <- GCT$Name
   GCT <- GCT[,-c(1,2)] #cleaning
