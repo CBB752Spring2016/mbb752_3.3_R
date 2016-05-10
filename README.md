@@ -1,4 +1,4 @@
-# Project GEED.r
+# README for Enrichment Score Calculator for Pre-defined Data Set Calculator (GEED.R)
 
 Author: Calvin Rhodes
 
@@ -18,6 +18,11 @@ GEED.r requires 3 inputs: a gct file (gene expression data), a cls file (class l
 ## Input Example
 
 All code is based on the following paper: http://www.pnas.org/content/102/43/15545.full.pdf. Our gctfile and clsfile are also derived from the paper; the two class labels are ALL (acute lymphocytic leukemia) and AML (acute myelogenous leukemia). We incorporated an arbitrarily constructed pre-defined geneset (geneset.txt), which features 12 genes that overlap with the data from the gct file.
+
+## Other
+
+* [CBB 752 Final Project Website](http://cbb752spring2016.github.io/)
+* [Python Tool](https://github.com/kevkid/cbb752_3.3_py), brought by [Kevin](https://github.com/kevkid)
 
 ```{r}
 GEED("all_aml_train.gct", "all_aml_train.cls", "geneset.txt")
